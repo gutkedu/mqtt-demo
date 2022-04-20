@@ -1,0 +1,36 @@
+{
+  "name": "mqtt-demo",
+  "version": "1.0.0",
+  "description": "learning mqtt protocol",
+  "main": "index.js",
+  "scripts": {
+    "start-publisher": "nodemon publisher.js",
+    "start-consumer": "nodemon subscriber.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutkedu/mqtt-demo.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MQTT",
+    "Pub/Sub",
+    "IoT",
+    "message",
+    "transport"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gutkedu/mqtt-demo/issues"
+  },
+  "homepage": "https://github.com/gutkedu/mqtt-demo#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mqtt": "^4.3.7",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
