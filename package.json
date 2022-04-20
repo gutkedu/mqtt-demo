@@ -4,8 +4,8 @@
   "description": "learning mqtt protocol",
   "main": "index.js",
   "scripts": {
-    "start-publisher": "nodemon publisher.js",
-    "start-consumer": "nodemon subscriber.js"
+    "start-publisher": "nodemon ./publisher/publisher.js",
+    "start-consumer": "nodemon ./subscriber/subscriber.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/gutkedu/mqtt-demo#readme",
   "dependencies": {
-    "dotenv": "^16.0.0",
     "mqtt": "^4.3.7",
     "uuidv4": "^6.2.13"
   },

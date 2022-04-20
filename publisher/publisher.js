@@ -1,18 +1,16 @@
 const mqtt = require('mqtt')
-require('dotenv').config()
 const { uuid } = require('uuidv4');
+const BROKER_URL = 'mqtt://test.mosquitto.org'
 
 const clientId = uuid();
 const client = mqtt.connect(
-  process.env.BROKER_URL,
+  BROKER_URL,
   {
     clientId: clientId,
     clean: false,
     reconnectPeriod: 1
   });
-
-// console.log(process.env.BROKER_URL, 'client', clientId) 
-
+  
 const topicName = 'test/connection'
 
 client.on("connect", function (connack) {
